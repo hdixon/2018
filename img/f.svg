@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="39px" height="39px" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.627577594   0 0 0 0 0.627577594   0 0 0 0 0.627577594  0 0 0 0.326024683 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(33.000000, -24.000000)" fill-opacity="0.789855072" filter="url(#filter-1)" fill="#FFFFFF">
+            <path d="M-1.4904271,30 L-25.5081001,30 C-26.3328424,30 -27,30.667194 -27,31.4890356 L-27,55.5094916 C-27,56.332806 -26.3328424,57 -25.5081001,57 L-12.5787923,57 L-12.5787923,46.5428758 L-16.0972018,46.5428758 L-16.0972018,42.4690159 L-12.5787923,42.4690159 L-12.5787923,39.4629609 C-12.5787923,35.9752891 -10.44919,34.0768056 -7.33726068,34.0768056 C-5.84683358,34.0768056 -4.56553756,34.1872682 -4.19293078,34.2373445 L-4.19293078,37.8811368 L-6.35051546,37.8826096 C-8.04270987,37.8826096 -8.37113402,38.6867772 -8.37113402,39.8665176 L-8.37113402,42.4690159 L-4.33578792,42.4690159 L-4.86156112,46.5428758 L-8.37113402,46.5428758 L-8.37113402,57 L-1.4904271,57 C-0.667157585,57 0,56.3313332 0,55.5094916 L0,31.4890356 C-0.00147275405,30.667194 -0.668630339,30 -1.4904271,30 L-1.4904271,30 Z" id="facebook" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
