@@ -10,204 +10,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Henry Dixon is a developer and designer at Carnegie Mellon University.">
   <link rel="stylesheet" href="style/reset.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="style/tachyons.min.css">
+  <link rel="stylesheet" href="/style/style.css">
   <title>Henry Dixon</title>
-  <style>
-    body,
-    html {
-      background: whitesmoke;
-      height: 100%;
-      padding: 0;
-      margin: 0;
-    }
-
-    .site-header {
-      height: 100%;
-      min-height: 400px;
-      width: 100%;
-      position: relative;
-      overflow: hidden;
-    }
-
-    /*h1 {
-      margin: 0;
-      padding: 0;
-      line-height: 1;
-      font-size: 4em;
-      text-transform: uppercase;
-      font-weight: 900;
-      position: absolute;
-      top: 40%;
-      width: 9.2em;
-      text-align: center;
-      z-index: 5;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-    }*/
-
-    canvas {
-      /* -webkit-animation: float 8s ease-in-out forwards; */
-      position: absolute;
-      left: 50%;
-      -webkit-transform: translateX(-50%)translateZ(0);
-      height: 50%;
-    }
-
-    @-webkit-keyframes float {
-      0% {
-        -webkit-transform: translateX(-50%)translateZ(0)translateY(100%);
-      }
-      100% {
-        -webkit-transform: translateX(-50%)translateZ(0)translateY(50%);
-      }
-    }
-
-    article {
-      width: 100%;
-      text-align: center;
-      font-size: 2em;
-      text-transform: uppercase;
-    }
-
-    d6d6d6 article:nth-child(even) {
-      background-color: #212121;
-      color: white;
-    }
-
-    article:nth-child(even) {
-      background-color: #d6d6d6;
-      color: #212121;
-    }
-  </style>
 
 </head>
 
 <body translate="no" class="sans-serif">
-  <nav class="db dt-l w-100 border-box pa3 ph5-l bg-black-80 white">
-    <a class="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l"></a>
-    <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
-      <a class="link white dim f6 f5-l dib mr3 mr4-l" href="/">Home</a>
-      <a class="link white dim f6 f5-l dib mr3 mr4-l" href="/about">About</a>
-      <a class="link white dim f6 f5-l dib" href="/job">Hire me</a>
-    </div>
-  </nav>
-  <div id="herotext" class="site-header yellow">
-    <div class="absolute mw6 ph3 mh3 fr w-40">
-      <h1 class="f1 fw6 lh-solid mb0">HENRY DIXON</h1>
-      <h3>human computer interaction & content strategy</h3>
-    </div>
-  </div>
-  <article>Content</article>
-  <article>Content</article>
-  <article>Content</article>
+  <header class="w-100 vh-100 vh-75-ns dt ph3 ph4-m ph6-l pv5 pv6-ns bg-yellow">
+    <center class="dtc v-mid tl black-90">
+      <h1 class="ma0 f1 f-subheadline-m f-headline-l lh-title fw6 ttu">Henry Dixon</h1>
+      <h2 class="normal f4 f3-ns mv0 lh-title">UX Design, Usable Security &amp; Frontend Development.</h2>
+      <nav class="wow animated fadeIn">
+        <ul class="list pa0 mv4 lh-copy">
+          <li class="dib mr2"><a class="link underline-hover dark-gray b ttu" href="resume/" data-scroll>Resume</a></li>
+          <li class="dib mr2"><a class="link underline-hover dark-gray b ttu" href="https://www.instagram.com/henry.dixon/" data-scroll>Instagram</a></li>
+          <li class="dib mr2"><a class="link underline-hover dark-gray b ttu" href="https://twitter.com/nothenrydixon" data-scroll>Twitter</a></li>
+          <li class="dib mr2"><a class="link underline-hover dark-gray b ttu" href="about/" data-scroll>About</a></li>
+        </ul>
+      </nav>
+      <address class="fs-normal wow animated fadeInUp">
+      <ul class="list pa0 mv4 lh-copy">
+        <li class="dib mr2"><a class="link underline-hover dark-gray" href="mailto:&#104;&#100;&#105;&#120;&#111;&#110;&#064;&#099;&#109;&#117;&#046;&#101;&#100;&#117;"><abbr title="Email"><i class="fa fa-fw fa-envelope" aria-hidden="true"></i></abbr>hdixon@cmu.edu</a></li>
+      </ul>
+    </address>
+    </center>
+  </header>
 
-  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-  <script>
-    // BASED ON A VISUALIZATION BY ELI FITCH http://eli.wtf/
-    var header = $('.site-header'),
-      canvas = $('<canvas></canvas>').appendTo(header)[0],
-      ctx = canvas.getContext('2d'),
-      color = '#57A5FF',
-      idle = null,
-      mousePosition;
-    ctx.scale(2, 2);
+  <footer class="bg-black-80 pa3">
+  </footer>
 
-    canvas.width = window.innerWidth * 2;
-    canvas.height = header.outerHeight() * 2;
-    canvas.style.width = window.innerWidth + "px";
-    canvas.style.height = header.outerHeight() + "px";
-    canvas.style.display = 'block';
-
-    ctx.fillStyle = color;
-    ctx.lineWidth = 1;
-    ctx.strokeStyle = color;
-
-    var dotNum = Math.min((window.innerWidth / 2), 600);
-    console.log(dotNum)
-    var mousePosition = {
-        x: 30 * canvas.width / 100,
-        y: 30 * canvas.height / 100
-      },
-      //dots = { nb: 600, distance: 80, d_radius: 3000, array: [] };
-      dots = {
-        nb: dotNum,
-        distance: 80,
-        d_radius: 3000,
-        array: []
-      };
-
-    function Dot() {
-      this.x = Math.random() * canvas.width;
-      this.y = Math.random() * canvas.height;
-
-      this.vx = -.5 + Math.random();
-      this.vy = -.5 + Math.random();
-
-      this.radius = Math.random();
-    }
-
-    Dot.prototype = {
-      create: function() {
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-        ctx.fill();
-      },
-
-      animate: function() {
-
-        for (var i = 0, dot = false; i < dots.nb; i++) {
-
-          dot = dots.array[i];
-
-          if (dot.y < 0 || dot.y > canvas.height) {
-            dot.vx = dot.vx;
-            dot.vy = -dot.vy;
-          } else if (dot.x < 0 || dot.x > canvas.width) {
-            dot.vx = -dot.vx;
-            dot.vy = dot.vy;
-          }
-          dot.x += dot.vx;
-          dot.y += dot.vy;
-        }
-      },
-
-      line: function() {
-        for (var i = 0; i < dots.nb; i++) {
-          for (var j = 0; j < dots.nb; j++) {
-            i_dot = dots.array[i];
-            j_dot = dots.array[j];
-
-            if ((i_dot.x - j_dot.x) < dots.distance && (i_dot.y - j_dot.y) < dots.distance && (i_dot.x - j_dot.x) > -dots.distance && (i_dot.y - j_dot.y) > -dots.distance) {
-              if ((i_dot.x - mousePosition.x) < dots.d_radius && (i_dot.y - mousePosition.y) < dots.d_radius && (i_dot.x - mousePosition.x) > -dots.d_radius && (i_dot.y - mousePosition.y) > -dots.d_radius) {
-                ctx.beginPath();
-                ctx.moveTo(i_dot.x, i_dot.y);
-                ctx.lineTo(j_dot.x, j_dot.y);
-                ctx.stroke();
-                ctx.closePath();
-              }
-            }
-          }
-        }
-      }
-    };
-
-    function createDots() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      for (var i = 0; i < dots.nb; i++) {
-        dots.array.push(new Dot());
-        dot = dots.array[i];
-
-        dot.create();
-      }
-
-      dot.line();
-      dot.animate();
-    }
-
-    idle = setInterval(createDots, 1000 / 20);
-  </script>
 
   <script id="__bs_script__">
     //<![CDATA[

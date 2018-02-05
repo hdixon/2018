@@ -1,0 +1,19 @@
+body,
+html {
+  /* background: #eee; */
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.site-header {
+  height: 60%;
+  min-height: 400px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+article {
+  width: 100%;  /* font-size: 2em; */
+}
