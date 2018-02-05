@@ -1,0 +1,48 @@
+.window .top-bar {
+  background: #DFDFDF;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  display: block;
+  height: 12px;
+}
+
+.window .top-bar .circle {
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+  border-radius: 100%;
+  transform: translateY(-9px);
+  background: #F6F6F9;
+}
+
+.window .top-bar .circle:first-child {
+  margin-left: 6px;
+}
+
+.window .top-bar .tab {
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 6px 6px 0 0;
+  height: 8px;
+  width: 57px;
+  margin-left: 2px;
+  transform: translateY(-6px);
+  border-bottom: 8px solid #F6F6F9;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+
+.window .field {
+  height: 11px;
+  background: #F6F6F9;
+}
+
+.window .fill {
+  border-radius: 0 0 3px 3px;
+  width: 292px;
+  height: 180px;
+  background-color: white;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+}
