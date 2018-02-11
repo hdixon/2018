@@ -1,0 +1,38 @@
+#mineralt-answer {
+    position: fixed;
+    display: none;
+    z-index: 20000;
+}
+
+#mineralt-answer, #mineralt-answer a {
+    color: #FFFFFF;
+}
+
+#mineralt-answer p {
+    margin: 0;
+}
+
+#mineralt-answer div:first-child {
+    background: #4e263d;
+    padding: 7px;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+#mineralt-answer div:last-child {
+    background: #4e263d;
+}
+
+#mineralt-answer div:last-child button {
+    border: none;
+    background: transparent;
+    padding: 0;
+    width: 3rem;
+    height: 3rem;
+}
+
+#mineralt-answer div:last-child button span {
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
